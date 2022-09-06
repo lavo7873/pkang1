@@ -52,9 +52,7 @@ def to_hex(number: int) -> str:
 
 def hextobin(hexval):
         '''
-        Takes a string representation of hex data with
-        arbitrary length and converts to string representation
-        of binary.  Includes padding 0s
+        we take the hex convert to binary . and return to value
         '''
         thelen = len(hexval)*4
         binval = bin(int(hexval, 16))[2:]
