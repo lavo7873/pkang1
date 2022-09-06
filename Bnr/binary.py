@@ -50,6 +50,8 @@ def to_hex(number: int) -> str:
     
     return "0x" + answer
 
+num_con = str(input("Input your number : "))
+
 def hextobin(hexval):
         '''
         we take the hex convert to binary . and return to value
@@ -59,8 +61,12 @@ def hextobin(hexval):
         while ((len(binval)) < thelen):
             binval = '0' + binval
         return binval
+#num_con = hextobin
 
-print(hextobin('7B316'))
+#hextobin('7B316')
+print(hextobin(num_con))
+
+
 print(to_hex(41005))
 print(to_hex(0xA02D))
 print(to_hex(0b1010000000101101))
