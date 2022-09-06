@@ -49,6 +49,8 @@ def to_hex(number: int) -> str:
             break
     
     return "0x" + answer
+  
+
 
 num_con = str(input("Input your number : "))
 
@@ -59,10 +61,9 @@ def hextobin(hexval):
         thelen = len(hexval)*4
         binval = bin(int(hexval, 16))[2:]
         while ((len(binval)) < thelen):
-            binval = '0' + binval
+            binval = '0x' + binval
         return binval
 #num_con = hextobin
-
 #hextobin('7B316')
 print(hextobin(num_con))
 
